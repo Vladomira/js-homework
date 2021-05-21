@@ -167,13 +167,189 @@ for (let i = 0; i <fruits.length; i +=1) { // Change this line
 }
 
 // ====================20 Задача: подсчёт суммы покупки==============
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//  for (let i = 1; i <= order; i +=1) {
+//    total += i;
+  
+//  }
+//   return total;
+// }
+
 function calculateTotalPrice(order) {
   let total = 0;
   // Change code below this line
- for (let i = 1; i <= order; i +=1) {
-   total += i;
-  
+ for (number of order) {
+   total += number;
  }
   // Change code above this line
   return total;
+}
+
+// ====================21 Задача: поиск самого длинного слова==============
+function findLongestWord(string) {
+  // Change code below this line
+ let arrayString = string.split(" ");
+  let biggestWord = arrayString[0];
+   
+for ( let i = 0; i < arrayString.length; i += 1) {
+  if (arrayString[i].length > biggestWord.length){
+    biggestWord = arrayString[i];   
+  } 
+  }
+  return biggestWord;
+}
+
+
+// function findLongestWord(string) {
+//  let arrayString = string.split(" ");
+//   let biggestWord = arrayString[0];
+   
+// for (let word of arrayString) {
+//   if (word > biggestWord){
+//     biggestWord = word;
+   
+// }
+//  return biggestWord;
+// }
+// }
+
+// ====================22 Метод push()==============
+function createArrayOfNumbers(min, max) {
+  const numbers = [];
+  // Change code below this line
+  
+for (i = min; i <= max; i +=1){
+  numbers.push(i);
+}
+  // Change code above this line
+  return numbers;
+}
+
+// =====================23 Задача: фильтрация массива чисел========
+function filterArray(numbers, value) {
+  // Change code below this line
+let numbersArray = [];
+ 
+ for (let i = 0; i < numbers.length; i +=1){
+ if (numbers[i] > value){
+  
+   numbersArray.push(numbers[i]);
+   } 
+}
+ return numbersArray;
+}
+console.log(filterArray([1, 2, 3, 4, 5], 4));
+
+// ===============24 Метод includes()===========
+function checkFruit(fruit) {
+  const fruits = ["apple", "plum", "pear", "orange"];
+
+  return fruits.includes(fruit); // Change this line
+}
+
+
+// ================25 Задача: общие элементы===========
+function getCommonElements(array1, array2) {
+  let commonNumber = [];
+  
+for (number of array1) {
+ 
+     if (array2.includes(number)) {
+        commonNumber.push(number);
+      }
+  }  
+ 
+return commonNumber;
+}
+console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+
+// =====================26Цикл for...of===============
+function calculateTotalPrice(order) {
+  let total = 0;
+  // Change code below this line
+
+  for (element of order) {
+    total += element;
+  }
+
+  // Change code above this line
+  return total;
+}
+
+// ====================27 Зачада: фильтрация массива чисел 2.0===========
+function filterArray(numbers, value) {
+  const filteredNumbers = [];
+
+  for (number of numbers) {
+   
+
+    if (number > value) {
+      filteredNumbers.push(number);
+    }
+  }
+
+  return filteredNumbers;
+}
+
+
+// =====================28 Оператор % ==============================
+// Change code below this line
+const a = 3 %3;
+const b = 4 %3;
+const c = 11 %8;
+const d = 12 %7;
+const e = 8 %6 ;
+
+// ================29 Задача: чётные числа============
+function getEvenNumbers(start, end) {
+  // Change code below this line
+const number = [];
+ 
+for (let i = start; i <= end ; i += 1) {
+  if (i %2 === 0){
+  number.push(i);
+}
+}
+return number;
+  
+ }
+console.log(getEvenNumbers(6, 12));
+
+// ====================30 Оператор break=============
+const start = 6;
+const end = 27;
+let number;
+
+for (let i = start; i < end; i += 1) {
+  if (i % 5 === 0) {
+    number = i;
+    
+    break;
+  }
+}
+
+
+// ===================== 31 Оператор break vs return в функции=============
+function findNumber(start, end, divisor) {
+
+  for (let i = start; i < end; i += 1) {
+    if (i % divisor === 0) {
+      return i;
+    }
+  }
+
+}
+
+
+// ====================32 Задача: функция includes()============
+function includes(array, value) {
+ for (let i = 0; i <= array.length; i += 1){
+   if ( array[i] === value) {
+     return true;
+   }
+   
+}
+  return false;
+
 }
